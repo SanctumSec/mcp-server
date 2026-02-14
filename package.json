@@ -1,0 +1,49 @@
+{
+  "name": "@sanctumai/mcp-server",
+  "version": "0.3.2",
+  "mcpName": "io.github.jwgale/sanctum",
+  "description": "SanctumAI MCP Server — Credential vault and CRP provider for AI agents",
+  "license": "MIT",
+  "homepage": "https://sanctumai.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanctumSec/sanctum.git",
+    "directory": "packages/mcp-server"
+  },
+  "bin": {
+    "sanctum-mcp": "bin/sanctum-mcp.js"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "keywords": [
+    "mcp",
+    "credentials",
+    "security",
+    "ai-agents",
+    "vault",
+    "crp"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "optionalDependencies": {
+    "@sanctumai/mcp-server-darwin-arm64": "0.1.0",
+    "@sanctumai/mcp-server-darwin-x64": "0.1.0",
+    "@sanctumai/mcp-server-linux-x64": "0.1.0",
+    "@sanctumai/mcp-server-linux-arm64": "0.1.0",
+    "@sanctumai/mcp-server-win32-x64": "0.1.0",
+    "@sanctumai/mcp-server-win32-arm64": "0.1.0"
+  }
+}

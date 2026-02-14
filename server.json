@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.jwgale/sanctum",
+  "title": "SanctumAI — Credential Vault for AI Agents",
+  "description": "Credential vault for AI agents — encrypted storage, lease-based access, CRP support.",
+  "repository": {
+    "url": "https://github.com/SanctumSec/sanctum",
+    "source": "github"
+  },
+  "version": "0.3.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@sanctumai/mcp-server",
+      "version": "0.3.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SANCTUM_VAULT_PATH",
+          "description": "Path to the SanctumAI vault directory. Defaults to ~/.sanctum",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": false
+        },
+        {
+          "name": "SANCTUM_PASSPHRASE",
+          "description": "Vault passphrase for automated/headless operation. If not set, the vault must be unlocked interactively or via the web UI.",
+          "isRequired": false,
+          "format": "string",
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

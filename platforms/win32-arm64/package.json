@@ -1,0 +1,18 @@
+{
+  "name": "@sanctumai/mcp-server-win32-arm64",
+  "version": "0.3.0",
+  "description": "SanctumAI MCP Server binary for win32-arm64",
+  "license": "MIT",
+  "homepage": "https://sanctumai.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SanctumSec/sanctum",
+    "directory": "packages/mcp-server"
+  },
+  "os": ["win32"],
+  "cpu": ["arm64"],
+  "files": [
+    "sanctum-mcp.exe"
+  ],
+  "preferUnplugged": true
+}

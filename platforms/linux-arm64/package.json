@@ -1,0 +1,18 @@
+{
+  "name": "@sanctumai/mcp-server-linux-arm64",
+  "version": "0.3.0",
+  "description": "SanctumAI MCP Server binary for linux-arm64",
+  "license": "MIT",
+  "homepage": "https://sanctumai.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SanctumSec/sanctum",
+    "directory": "packages/mcp-server"
+  },
+  "os": ["linux"],
+  "cpu": ["arm64"],
+  "files": [
+    "sanctum-mcp"
+  ],
+  "preferUnplugged": true
+}
